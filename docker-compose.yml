@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  opencv:
+    image: spmallick/opencv-docker:opencv
+    ports:
+      - "5000:5000"
+      - "8888:8888"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /mnt:/mnt:rw
+    environment:
+      DISPLAY: "$DISPLAY"
+    restart: always
+    networks:
+      - default
+networks:
+  default:
