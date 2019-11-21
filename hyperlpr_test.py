@@ -10,7 +10,7 @@ def cv_show(img,name='undefine'):
 	cv2.waitKey(0)
 	cv2.destroyAllWindows()
 #读入图片
-image = cv2.imread("./images/timg6.jpg")
+image = cv2.imread("./images/timg4.jpg")
 #显示图片
 cv_show(image);
 #识别结果
